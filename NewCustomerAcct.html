@@ -1,0 +1,72 @@
+<!doctype html>
+
+
+<html>
+<head>
+<title> The Flowering Pot</title>
+
+<meta charset="UTF-8">
+</head>
+<link rel="stylesheet"
+		type="text/css"
+		href="it202_p2_styleSheet.css"/>
+		
+<body>
+
+<div>
+	<ul>
+		<li><a class="active" href="FlowerPotHomePage.html">Home</a></li>
+		<li><a href="searchFlorist.php">Search Florist Records</a></li>
+		<li><a href="PlaceOrder.html">Place An Order</a></li>
+		<li><a href="updateOrder.html">Update An Order</a></li>
+		<li><a href="cancelOrder.html">Cancel An Order</a></li>
+		<li><a href="NewCustomerAcct.html">Create New Customer Account</a></li>
+	</ul>
+</div>
+
+<div class="center">
+	<h1 align="center">The Flowering Pot</h1>	
+</div>
+
+
+				<div class ="center">
+					<h3 align="center">Create A New Customer Account</h3>
+				</div>
+	<div class ="center">			
+	<form id="form" name="formCust" action="NewCustomerAcct.php" method="POST">
+			<label for="custFirstName"> Customer First Name: </label>	
+		    <input class="required"
+				   type = "text" 
+				   id="custFirstName"
+				   name = "custFirstName" 
+				   placeholder = "First Name" 
+				   />
+			<label for="custFirstName" class="req">Required</label>
+			<br>	</br>
+     		<!--value="Enter First Name" pattern="[A-Za-z]"--> 
+					
+			<label for="custLastName"> Cusotmer Last Name:</label>
+				<input class="required"
+						type="text"
+						id="custLastName"
+					    name = "custLastName" 
+						placeholder="Last Name"
+					    />
+				<label for="custLastName" class="req">Required</label>
+				<br></br>
+			<label for="custID"> Cusotmer ID:</label>
+				<input class="required"
+						type="number"
+						id="custID"
+					    name = "custID" 
+						placeholder="ID Number"
+					    />
+				<label for="custLastName" class="req">Required</label>
+				<br></br>
+				<input type="submit" value="Submit" />
+</form>
+</div>
+
+
+</body>
+</html>
